@@ -4,6 +4,7 @@ import CascadeTable from "@/components/CascadeTable/CascadeTable";
 import style from "./RightSideBar.style.module.scss";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { setBudgetList } from "@/store/BudgetSlice";
+import { CircularProgress } from "@mui/material";
 
 
 export default function RightSideBar() {
@@ -16,9 +17,9 @@ export default function RightSideBar() {
   return (
     <div className={style.rightSideBar}>
       {error ? (
-        <>Oh no, there was an error</>
+        <>Ошибка при отправке запроса</>
       ) : isLoading ? (
-        <>Loading...</>
+        <CircularProgress disableShrink />
       ) : budgetList?.length > 0 && (
         <>
           <div className={style.rightSideBar__header}>
