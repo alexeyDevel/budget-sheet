@@ -1,0 +1,29 @@
+@import '../../../../colors.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px;
+  border-bottom: 1px solid #414144;
+}
+.header__start {
+  display: flex;
+}
+.header__startBtn :hover {
+  color: $primary-color-hover;
+}
+.header__startBtn:not(:first-of-type) {
+  margin-left: 20px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  margin-left: 28px;
+  .header__navBtn:not(:first-of-type) {
+    margin-left: 22px;
+  }
+  .header__navBtn:focus-visible {
+    outline: none;
+  }
+}

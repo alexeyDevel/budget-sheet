@@ -1,0 +1,11 @@
+@import '../../colors.scss';
+
+.MuiFormControl-root.inputWrapper {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #414144;
+  background: transparent;
+  .MuiInputBase-root {
+    color: $primary-color;
+  }
+}

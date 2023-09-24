@@ -1,0 +1,43 @@
+@import './../../colors.scss';
+
+.selectWrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  color: $primary-color;
+  padding: 6px 0 7px 0px;
+  p {
+    font-size: 10px;
+    margin-top: -4px;
+  }
+}
+.select {
+  & > div {
+    padding: 0px;
+    padding-right: 0px !important;
+    min-width: 207px;
+    color: $primary-color;
+    border: none;
+    font-size: 14px;
+  }
+  svg {
+    display: none;
+  }
+  fieldset {
+    outline: none;
+    border: none;
+  }
+}
+.selectIcon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 0px;
+  bottom: 7px;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+.selectIconRotated {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}

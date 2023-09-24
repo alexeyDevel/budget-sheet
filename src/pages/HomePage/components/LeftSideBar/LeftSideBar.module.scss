@@ -1,0 +1,38 @@
+@import '../../../../colors.scss';
+
+.leftSideBar {
+  width: 235px;
+  max-width: 235px;
+  height: 100%;
+  border-right: 1px solid $border-color;
+  .leftSideBar__text {
+    font-size: 14px;
+    font-style: normal;
+    color: $primary-color-hover;
+  }
+  .leftSideBar__header {
+    padding: 0px 7px 0px 20px;
+    border-bottom: 1px solid $border-color;
+  }
+  .leftSideBar__list {
+    padding: 0;
+  }
+  .leftSideBar__icon {
+    min-width: none;
+    margin-right: 14px;
+  }
+  .leftSideBar__li {
+    padding: 0px;
+    a {
+      padding: 5px 0px 5px 20px;
+      width: 100%;
+      display: flex;
+      transition: background 0.3s ease;
+    }
+  }
+}
+.active,
+a:hover {
+  background: $border-color;
+  transition: background 0.3s ease;
+}

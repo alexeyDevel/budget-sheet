@@ -1,0 +1,67 @@
+@import '../../colors.scss';
+
+.tableContainer {
+  height: 100%;
+  .cascadeTable {
+    height: 100%;
+    overflow: scroll;
+    .cascadeTable_body {
+      height: 100%;
+      overflow: scroll;
+    }
+  }
+}
+
+.cascadeTable_bodyRow {
+  th,
+  td {
+    color: $primary-color-hover;
+  }
+}
+.cascadeTable_headRow {
+  th,
+  td {
+    color: $primary-color;
+    background-color: $background-color;
+    z-index: 100;
+  }
+}
+.levelCell {
+  position: relative;
+}
+.verticalLine {
+  position: absolute;
+  top: -50%;
+  left: 10px;
+  width: 1px;
+  height: 100%;
+  background-color: $primary-color-hover;
+}
+.horizontalLine {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 10px;
+  height: 1px;
+  background-color: $primary-color-hover;
+}
+.buttonGroup {
+  position: relative;
+  width: 54px;
+  height: 28px;
+  padding: 2px 3px 2px 1px;
+  border-radius: 6px;
+  background: #414144;
+  z-index: 10;
+  .button {
+    padding: 2px;
+  }
+}
+.cascadeTable_headCell_level {
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  overflow: auto;
+}

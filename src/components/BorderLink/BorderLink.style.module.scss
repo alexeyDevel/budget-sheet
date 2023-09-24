@@ -1,0 +1,21 @@
+@import '../../colors.scss';
+
+.linkInner {
+  padding: 14px 3px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s ease;
+}
+a {
+  color: $primary-color;
+}
+a:hover {
+  color: $primary-color-hover;
+}
+a:hover .linkInner {
+  border-bottom: 1px solid $primary-color-hover;
+  transition: border-bottom 0.5s ease;
+}
+.active {
+  color: $primary-color-hover;
+  border-bottom: 1px solid $primary-color-hover;
+}

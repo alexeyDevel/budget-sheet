@@ -1,0 +1,15 @@
+@import '../../colors.scss';
+
+.homePage {
+  display: flex;
+  flex: 1;
+  background-color: $background-color;
+  height: 100vh;
+  max-height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
