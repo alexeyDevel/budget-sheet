@@ -3,7 +3,7 @@ import { budgetApi } from "@/services/budgetService";
 import CascadeTable from "@/components/CascadeTable/CascadeTable";
 import style from "./RightSideBar.style.module.scss";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
-import { setBudgetList } from "@/store/budgetSlice";
+import { setBudgetList } from "@/store/BudgetSlice";
 
 
 export default function RightSideBar() {

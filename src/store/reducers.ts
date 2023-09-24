@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import { budgetApi } from '@/services/budgetService';
-import BudgetSlice from './budgetSlice';
+import BudgetSlice from './BudgetSlice';
 
 const rootReducer = combineReducers({
   budget: BudgetSlice,

@@ -13,7 +13,7 @@ import {
   addBudgetRow,
   removeBudgetRow,
   updateBudgetRow,
-} from '@/store/budgetSlice';
+} from '@/store/BudgetSlice';
 import useOutsideClick from '@/lib/hooks/useOutsideClick';
 import { formatNumber } from './CascadeTableRow.service';
 

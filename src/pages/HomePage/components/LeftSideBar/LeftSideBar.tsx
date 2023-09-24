@@ -11,7 +11,7 @@ export default function LeftSideBar() {
   return (
     <div className={style.leftSideBar}>
       <div className={style.leftSideBar__header}>
-        <InfoSelector value={0} />
+        <InfoSelector value={'0'} />
       </div>
       <div className={style.leftSideBar__listWrapper}>
         <List className={style.leftSideBar__list}>
